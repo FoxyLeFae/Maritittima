@@ -17,12 +17,15 @@
 <body>
 
 <!------Nav.bar----->
-	<div class="container-fluid navbar mb-5">
-			<div class="row justify-content-center  d-flex">
-				<div class="col-8 d-flex justify-content-center align-items-center">
+	<div class="container-fluid navbar d-flex mb-5">
+		<div class="row d-flex">
+				<div class="col-8 d-flex">
 						<img src="images/logo%20sandfarvet.png" alt="Logo" class="logo">
 				</div>
-			<div class="col-4">
+		</div>
+
+		<div class="row">
+			<div class="col-4 d-flex ">
 				<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 					<!-- Navigation links (hidden by default) -->
@@ -36,16 +39,18 @@
 						<i class="fa fa-bars"></i>
 					</a>
 			</div>
-			</div>
 		</div>
 	</div>
 
-<!-----velkommen----->
-<textarea>
 
-</textarea>
+<!-----velkommen----->
+<div class="textbox1 p-5">
+<h1>Velkommen til Vinoteque Marittima!</h1>
+	<h4>Vin, udsigt og oplevelser i højeste kvalitet!</h4>
+</div>
 
 <!-----slideshow---->
+<div class="container-fluid slideshow">
 	<div id="carousel-primary" class="carousel slide carousel-fade" data-bs-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -59,18 +64,78 @@
 			</div>
 		</div>
 	</div>
-<!-----Hvem er Merittima?--->
-<textarea>
+</div>
 
-</textarea>
+<!-----Hvem er Merittima?--->
+<div class="textbox">
+
+</div>
 
 <!-----ikon----->
 
 <!-----Hvad kan vi tilbyde?----->
+<div class="textbox">
 
+</div>
+<!-----ikon----->
 
+<!-----Alt det praktiske----->
+<div class="textbox">
 
+</div>
+<!-----ikon----->
+
+<!-----Hvor kan du finde os?----->
+<div class="textbox">
+
+</div>
+<!-----maps----->
+<div class="container maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2405.681892265529!2d11.861277199956561!3d54.770887338297634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sda!2sdk!4v1653750065608!5m2!1sda!2sdk"
+		width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+<!-----Priser og booking----->
+
+<!-----calender---->
+<div class="container calender">
+<div class="month">
+	<ul>
+		<li class="prev">&#10094;</li>
+		<li class="next">&#10095;</li>
+		<li>August<br><span style="font-size:18px">2021</span></li>
+	</ul>
+</div>
+
+<ul class="weekdays">
+	<li>Mo</li>
+	<li>Tu</li>
+	<li>We</li>
+	<li>Th</li>
+	<li>Fr</li>
+	<li>Sa</li>
+	<li>Su</li>
+</ul>
+
+<ul class="days">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+	<li><span class="active">10</span></li>
+	<li>11</li>
+
+</ul>
+</div>
 <!-----pic-menu----->
+<div class="container-fluid pic-menu">
 		<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
 			<!--Controls-->
@@ -213,46 +278,10 @@
 				</button>
 			</div>
 		</div>
-
-<!-----maps----->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2405.681892265529!2d11.861277199956561!3d54.770887338297634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sda!2sdk!4v1653750065608!5m2!1sda!2sdk"
-		width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-		referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-<!-----calender---->
-<div class="month">
-	<ul>
-		<li class="prev">&#10094;</li>
-		<li class="next">&#10095;</li>
-		<li>August<br><span style="font-size:18px">2021</span></li>
-	</ul>
 </div>
 
-<ul class="weekdays">
-	<li>Mo</li>
-	<li>Tu</li>
-	<li>We</li>
-	<li>Th</li>
-	<li>Fr</li>
-	<li>Sa</li>
-	<li>Su</li>
-</ul>
 
-<ul class="days">
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li>4</li>
-	<li>5</li>
-	<li>6</li>
-	<li>7</li>
-	<li>8</li>
-	<li>9</li>
-	<li><span class="active">10</span></li>
-	<li>11</li>
 
-</ul>
 
 <script>
 	function myFunction() {

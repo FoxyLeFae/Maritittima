@@ -36,7 +36,8 @@ img {
 
 .navbar {
 	background-image: url(../images/navbar-background.png);
-
+	position: fixed;
+	z-index: 99;
 
 }
 
@@ -45,7 +46,7 @@ img {
 }
 
 .logo {
-max-height: 60px;
+max-height: 100px;
 }
 
 ul {list-style-type: none;}
@@ -53,7 +54,7 @@ body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
-	padding: 70px 25px;
+	padding: 40px 25px;
 	width: 100%;
 	background: #1abc9c;
 	text-align: center;
@@ -118,7 +119,7 @@ body {font-family: Verdana, sans-serif;}
 /* Highlight the "current" day */
 .days li .active {
 	padding: 5px;
-	background: #1abc9c;
+	background: #2400a0;
 	color: white !important
 }
 
@@ -130,12 +131,17 @@ body {font-family: Verdana, sans-serif;}
 
 /* Style navigation menu links */
 .navbar a {
-	color: white;
+	color: #c9a04f;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 	display: block;
 }
 
+.slideshow {
+}
 
 
+.textbox {
+	background-color: #93dff4;
+}
