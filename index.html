@@ -2,7 +2,7 @@
 <html lang="da">
 <head>
 	<meta charset="utf-8">
-	<title>Sigende titel</title>
+	<title>Velkommen til Vinoteque Marittima!</title>
 	
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
@@ -10,6 +10,12 @@
 	
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -21,23 +27,20 @@
 		<div class="row d-flex">
 				<div class="col-8 d-flex">
 					<a href="#home">
-						<img src="images/logo%20sandfarvet.png" alt="Logo" class="logo">
+						<img src="images/logo.png" alt="Logo" class="logo">
 					</a>
 				</div>
 		</div>
 
 		<div class="row">
 			<div class="col-4 d-flex ">
-				<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-					<!-- Navigation links (hidden by default) -->
 					<div id="myLinks">
 						<a href="#faciliteter">Faciliteter</a>
 						<a href="#praktisk info">Praktisk info</a>
 						<a href="#lokation">Lokation</a>
 						<a href="#priser">Booking</a>
 					</div>
-					<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 						<i class="fa fa-bars"></i>
 					</a>
@@ -45,11 +48,11 @@
 		</div>
 	</div>
 
-
+<div class="container-fluid content-wrapper g-0">
 <!-----velkommen----->
 <a id="home"></a>
-<div class="textbox1 p-5">
-<h1>Velkommen til Vinoteque Marittima!</h1>
+<div class="introbox pt-5">
+<h2 class="p-5">Velkommen til Vinoteque Marittima!</h2>
 	<h4>Vin, udsigt og oplevelser i højeste kvalitet!</h4>
 </div>
 
@@ -71,15 +74,14 @@
 	</div>
 </div>
 
-<!-----Hvem er Merittima?--->
-<div class="container-fluid">
+<!-----Hvem er Marittima?--->
 <div class="textbox">
 <h1>Hvem er Marittima?</h1>
 </div>
 
 <!-----ikon----->
 	<img src="images/wine%20glass.png" alt="icon">
-</div>
+
 <!-----Hvad kan vi tilbyde?----->
 <a id="faciliteter"></a>
 <div class="textbox">
@@ -305,7 +307,7 @@
 				</div>
 </div>
 
-
+</div>
 <script>
 	function myFunction() {
 		var x = document.getElementById("myLinks");
