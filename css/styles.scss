@@ -37,22 +37,23 @@ img {
 
 .navbar {
 	background-image: url(../images/navbar-background.png);
-	position: fixed;
+	background-repeat: no-repeat;
+	background-position: 20% 40%;
 	z-index: 99;
-	margin-bottom: 100px;
-
+	color: #c9a04f;
 }
 
 .footer {
 	background-image: url(../images/navbar-background.png);
+	background-repeat: no-repeat;
+	background-position: 20% 40%;
 }
 
 .logo {
-width: 100px;
+width: 70px;
 }
 
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
@@ -160,4 +161,12 @@ color: #595959;
 .icon {
 	height: 75px;
 	width: auto;
+}
+
+.content-wrapper {
+	padding-top: 100px;
+}
+
+.maps{
+	height: 250px;
 }
