@@ -67,6 +67,7 @@
     </div>
 
 
+
     <!-----slideshow---->
     <div class="row g-0 py-5 slideshow">
         <div class="col">
@@ -150,37 +151,38 @@
     </div>
 
 
+
     <!-----Hvem er Marittima?--->
-    <div class="row py-5 g-0 textbox">
+    <div class="row py-5 flex-column flex-md-row g-0">
         <div class="col">
-            <h1>Hvem er Marittima?</h1>
-            <p>Maittima er det nyeste medlem af familien Mortensen, her tilbyder vi dig et stort udvalg af lækkert
-                og lokalt vin, bryg og meget mere, lige på
-                vandet!
-                Efter mange sejlture igennem det
-                mediterrane hav, ligger Marittima båden
-                nu til kar på Falsters kyst hvor hun står parat
-                til at opfylde dine drømme om vin og ferie,
-                lige her i Denmark!
-                Marittima ligger klar til alle fester og samlinger,
-                samt adskillige events, spilleaftner og mere!
-                Du kan følge med i vores events på facebook
-            </p>
+            <div class="textbox">
+                <h1>Hvem er Marittima?</h1>
+                <p>Maittima er det nyeste medlem af familien Mortensen, her tilbyder vi dig et stort udvalg af lækkert
+                    og lokalt vin, bryg og meget mere, lige på
+                    vandet!
+                    Efter mange sejlture igennem det
+                    mediterrane hav, ligger Marittima båden
+                    nu til kar på Falsters kyst hvor hun står parat
+                    til at opfylde dine drømme om vin og ferie,
+                    lige her i Denmark!
+                    Marittima ligger klar til alle fester og samlinger,
+                    samt adskillige events, spilleaftner og mere!
+                    Du kan følge med i vores events på facebook
+                </p>
+            </div>
         </div>
-    </div>
 
-
-    <!-----vin-ikon----->
-    <div class="row py-5">
-        <div class="col d-flex justify-content-center align-items-center">
+        <!-----vin-ikon----->
+        <div class="col py-5 p-md-0 d-flex justify-content-center align-items-center">
             <img src="images/wine%20glass.png" alt="icon" class="icon m-5">
-        </div>
+         </div>
     </div>
+
 
 
     <!-----Hvad kan vi tilbyde?----->
-    <div class="row py">
-        <div class="col">
+    <div class="row flex-column flex-md-row py-md-5">
+        <div class="col order-md-2">
             <a id="Vi tilbyder"></a>
             <div class="textbox">
                 <h1>Hvad kan vi tilbyde?</h1>
@@ -190,19 +192,16 @@
                     something something something something something something </p>
             </div>
         </div>
-    </div>
-
-
-    <!-----anker-ikon----->
-    <div class="row py-5">
-        <div class="col d-flex justify-content-center align-items-center">
+        <!-----anker-ikon----->
+        <div class="col order-md-1 d-flex justify-content-center align-items-center py-5 py-md-0">
             <img src="images/anker.png" alt="icon" class="icon m-5">
         </div>
     </div>
 
 
+
     <!-----Alt det praktiske----->
-    <div class="row">
+    <div class="row flex-column flex-md-row py-md-5">
         <div class="col">
             <a id="praktisk info"></a>
             <div class="textbox">
@@ -213,20 +212,19 @@
                     something something something something something something </p>
             </div>
         </div>
-    </div>
-
-
-    <!-----kompas-ikon----->
-    <div class="row py-5">
-        <div class="col d-flex justify-content-center align-items-center">
-            <img src="images/kompas.png" alt="icon" class="icon m-5">
+        <!-----kompas-ikon----->
+        <div class="col d-flex justify-content-center align-items-center py-5 py-md-0">
+            <div class="">
+                <img src="images/kompas.png" alt="icon" class="icon m-5">
+            </div>
         </div>
     </div>
 
 
+
     <!-----Hvor kan du finde os?----->
-    <div class="row flex-column">
-        <div class="col">
+    <div class="row d-flex flex-column flex-md-row py-md-5">
+        <div class="col order-md-2">
             <a id="lokation"></a>
             <div class="textbox">
                 <h1>Hvor kan du finde os?</h1>
@@ -238,7 +236,7 @@
         </div>
 
         <!-----maps----->
-        <div class="col-12 py-5">
+        <div class="col-12 order-md-1 col-md-6 py-5 py-md-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2405.681892265529!2d11.861277199956561!3d54.770887338297634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sda!2sdk!4v1653750065608!5m2!1sda!2sdk"
 					class="maps w-100" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
@@ -249,7 +247,7 @@
 
 
     <!-----Priser og booking----->
-    <div class="row flex-column">
+    <div class="row flex-column flex-md-row py-md-5">
         <div class="col">
             <a id="priser"></a>
             <div class="textbox">
@@ -262,7 +260,7 @@
             </div>
         </div>
         <!-----calender---->
-        <div class="col pt-5">
+        <div class="col-12 col-md-6 pt-5 pt-md-0">
             <div class="month">
                 <ul>
                     <li class="prev">&#10094;</li>
@@ -317,17 +315,21 @@
             </ul>
             <button type="button" class=" m-5 btn btn-outline-primary">Book nu!</button>
         </div>
+
     </div>
 
 
     <!-----pic-menu----->
-    <div class="row pic-menu">
+    <div class="container-fluid g-0 pic-menu">
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 			<div class="carousel-indicators d-md-none">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
 			</div>
 
             <!-----slide-1---->
@@ -374,7 +376,7 @@
 
 				<div class="carousel-item">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-4 ">
 							<div class="card mb-2">
 								<img class="card-img-top" src="pic%20menu/lokation.jpg"
 									 alt="Card image cap">
@@ -386,7 +388,7 @@
 						</div>
 
 						<div class="col-md-4 clearfix d-none d-md-block">
-							<div class="card mb-2">
+							<div class="card mb-2 col-12">
 								<img class="card-img-top" src="pic%20menu/booking.jpg"
 									 alt="Card image cap">
 								<div class="carousel-caption d-sm-block">
