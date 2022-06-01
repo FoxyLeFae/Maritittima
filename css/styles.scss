@@ -5,7 +5,7 @@
 
 body {
 	margin: 0;
-	background-color: rgb(239, 217, 169);
+	background-color: rgb(239, 225, 191);
 	font-family: KaushanScript-Regular, serif;
 }
 
@@ -60,7 +60,7 @@ ul {list-style-type: none;}
 .month {
 	padding: 40px 25px;
 	width: 100%;
-	background: #c9a04f;
+	background: #941b20;
 	text-align: center;
 }
 
@@ -147,7 +147,7 @@ ul {list-style-type: none;}
 
 
 .textbox {
-	background-color: #abe7f8;
+
 }
 
 .introbox {
@@ -182,4 +182,10 @@ color: #595959;
 
 .introbox {
 	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.logo {
+		width: 100px;
+	}
 }
