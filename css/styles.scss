@@ -141,6 +141,10 @@ ul {list-style-type: none;}
 	display: block;
 }
 
+.navbar-dark {
+	color: #c9a04f;
+}
+
 .slideshow {
 	width: 100%;
 }
@@ -183,6 +187,7 @@ color: #595959;
 .introbox {
 	text-align: center;
 }
+
 
 @media screen and (min-width: 768px) {
 	.logo {
