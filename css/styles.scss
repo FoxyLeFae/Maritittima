@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	background-color: rgb(239, 225, 191);
-	font-family: KaushanScript-Regular, serif;
+	font-family: aileron, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +22,10 @@ ul, ol {
 
 li {
 	margin: 0;
+}
+
+.bg-white {
+	background-color: white;
 }
 
 p {
@@ -54,9 +58,7 @@ img {
 width: 70px;
 }
 
-ul {list-style-type: none;}
 
-/* Month header */
 .month {
 	padding: 40px 25px;
 	width: 100%;
@@ -64,76 +66,10 @@ ul {list-style-type: none;}
 	text-align: center;
 }
 
-/* Month list */
-.month ul {
-	margin: 0;
-	padding: 0;
-}
-
-.month ul li {
-	color: white;
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-	float: left;
-	padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-	float: right;
-	padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-	margin: 0;
-	padding: 10px 0;
-	background-color:#ddd;
-}
-
-.weekdays li {
-	display: inline-block;
-	width: 12%;
-	color: #666;
-	text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-	padding: 10px 0;
-	background: #eee;
-	margin: 0;
-}
-
-.days li {
-	list-style-type: none;
-	display: inline-block;
-	width: 12%;
-	text-align: center;
-	margin-bottom: 5px;
-	font-size:10px;
-	color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-	padding: 5px;
-	background: #2400a0;
-	color: white !important
-}
-
-
-/* Hide the links inside the navigation menu (except for logo/home) */
 .navbar #myLinks {
 	display: none;
 }
 
-/* Style navigation menu links */
 .navbar a {
 	color: #c9a04f;
 	text-decoration: none;
@@ -159,7 +95,7 @@ ul {list-style-type: none;}
 }
 
 .carousel-caption {
-color: #595959;
+color: #941b20;
 	text-decoration:solid black;
 }
 
@@ -169,7 +105,7 @@ color: #595959;
 }
 
 .content-wrapper {
-	padding-top: 100px;
+	padding-top: 35px;
 }
 
 .maps{
@@ -187,6 +123,20 @@ color: #595959;
 .introbox {
 	text-align: center;
 }
+.headline {
+	font-weight: bold;
+	font-size: 30pt;
+}
+
+.subheadline {
+	font-weight: bolder;
+	font-size: 20pt;
+}
+.regular {
+
+}
+
+
 
 
 @media screen and (min-width: 768px) {
