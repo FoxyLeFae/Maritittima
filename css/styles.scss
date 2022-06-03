@@ -62,7 +62,7 @@ width: 70px;
 .month {
 	padding: 40px 25px;
 	width: 100%;
-	background: #941b20;
+	background: #591623;
 	text-align: center;
 }
 
@@ -85,18 +85,9 @@ width: 70px;
 	width: 100%;
 }
 
-
-.textbox {
-
-}
-
-.introbox {
-
-}
-
 .carousel-caption {
-color: #941b20;
-	text-decoration:solid black;
+color:white;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .icon {
@@ -125,22 +116,64 @@ color: #941b20;
 }
 .headline {
 	font-weight: bold;
-	font-size: 30pt;
+	font-size: 22pt;
 }
 
 .subheadline {
 	font-weight: bolder;
-	font-size: 20pt;
+	font-size: 18pt;
 }
 .regular {
 
 }
 
+.headtitle {
+	font-size: 15pt;
+}
+.title {
+	font-size: 10pt;
+}
+.headtitle1 {
+	font-size: 15pt;
+}
+.title {
+	font-size: 10pt;
+}
 
+.title1 {
+	font-size: 10pt;
+}
+
+.footer-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.footer-text {
+	color: #c9a04f;
+}
+
+.carousel-caption {
+	justify-content: center;
+	align-items: center;
+}
 
 
 @media screen and (min-width: 768px) {
 	.logo {
 		width: 100px;
 	}
+	.headtitle1 {
+		font-size: 50px;
+	}
+	.title1 {
+		font-size: 30px;
+	}
+	.headline {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
 }
+
+
