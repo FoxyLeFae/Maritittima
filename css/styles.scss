@@ -38,6 +38,26 @@ img {
 }
 
 
-.video {
-rotation: 45deg;
+#desktop {
+object-fit: cover;
 }
+.btn-area {
+position: absolute;
+top: 60%;
+left: 50%;
+z-index: 2;
+}
+
+
+
+.logo {
+	position: absolute; align-items: center;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.video {
+	max-width: 100%;
+}
+
