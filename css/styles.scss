@@ -42,18 +42,20 @@ img {
 object-fit: cover;
 }
 .btn-area {
-position: absolute;
-top: 60%;
-left: 50%;
-z-index: 2;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	z-index: 2;
 }
 
 
 
 .logo {
-	position: absolute; align-items: center;
-	top: 40%;
-	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -10%);
 	z-index: 2;
 }
 
@@ -61,3 +63,27 @@ z-index: 2;
 	max-width: 100%;
 }
 
+.btn-blue {
+	background-color: #9af5d9;
+	border-color: #508071;
+	border-radius: 8px;
+}
+.btn-yellow {
+	background-color: #f5e99a;
+	border-color: #807950;
+	border-radius: 8px;
+}
+.btn-pink {
+	background-color: #fbbcf2;
+	border-color: #80607b;
+	border-radius: 8px;
+}
+.btn-purple {
+	background-color: #d79af5;
+	border-color: #705080;
+	border-radius: 8px;
+}
+
+.icon {
+	height: 20px;
+}
