@@ -46,44 +46,127 @@ object-fit: cover;
 	top: 75%;
 	left: 50%;
 	transform: translate(-50%, 100%);
-	z-index: 2;
 }
 
 
 
 .logo {
+	width: 65%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -10%);
-	z-index: 2;
+	transform: translate(-50%, 10%);
 }
 
 .video {
 	max-width: 100%;
 }
 
+.btn-text {
+	font-weight: bold;
+	font-size: 120%;
+
+
+}
 .btn-blue {
+
 	background-color: #9af5d9;
 	border-color: #508071;
 	border-radius: 8px;
+	font-family: Broadway, serif;
 }
 .btn-yellow {
 	background-color: #f5e99a;
 	border-color: #807950;
 	border-radius: 8px;
+	font-family: Broadway, serif;
 }
 .btn-pink {
 	background-color: #fbbcf2;
 	border-color: #80607b;
 	border-radius: 8px;
+	font-family: Broadway, serif;
 }
 .btn-purple {
 	background-color: #d79af5;
 	border-color: #705080;
 	border-radius: 8px;
+	font-family: Broadway, serif;
 }
 
+.btn-blue:hover {background-color: #508071}
+
+.btn-blue:active {
+	background-color: #508071;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.btn-yellow:hover {background-color: #807950}
+
+.btn-yellow:active {
+	background-color: #807950;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.btn-pink:hover {background-color: #80607b}
+
+.btn-pink:active {
+	background-color: #80607b;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.btn-purple:hover {background-color: #705080}
+
+.btn-purple:active {
+	background-color: #705080;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
 .icon {
 	height: 20px;
+}
+
+@media screen and (min-width: 768px){
+
+	.logo {
+		width: 50%;
+		transform: translate(-50%, 15%);
+	}
+	.btn-area{
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	}
+	.btn-text {
+		font-size: 180%;
+
+	}
+	.icon {
+		height: 40px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1020px){
+
+	.logo {
+		width: 25%;
+		transform: translate(-50%, -10%);
+	}
+	.btn-area{
+		transform: translate(-50, 150%);
+		padding-top: 5rem;
+	}
+	.btn-text {
+		font-size: 100%;
+
+	}
+	.icon {
+		height: 25px;
+		padding-right: 20px;
+	}
+	.btn {
+		max-width: 25%;
+		margin: 5%;
+	}
 }
