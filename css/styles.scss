@@ -5,6 +5,7 @@
 
 body {
 	margin: 0;
+	background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,10 +21,6 @@ ul, ol {
 
 li {
 	margin: 0;
-}
-
-.bg-white {
-	background-color: white;
 }
 
 p {
@@ -125,6 +122,31 @@ object-fit: cover;
 .icon {
 	height: 20px;
 }
+.bg-pic {
+	background-image: url("images/navbar-done2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar-expand-md {
+	background-image: url("images/navbar-done2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-dark {
+	background-image: url("images/navbar-done2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.navlogo {
+	 width: 25%;
+	margin: 0;
+ }
+
+
+
 
 @media screen and (min-width: 768px){
 
