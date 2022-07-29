@@ -6,8 +6,10 @@
 
 //Tilføj eller ret farver i Bootstrap. Herunder er primary blot sat til den normale primary
 $custom-colors: (
-  "primary": #941b20, //Retter primary
-  "secondary": #c9a04f, //Tilføjer minFarve
+  "blue": #a3fce0,
+  "pink": #fbbcf2,
+  "purple": #d79af5,
+  "yellow": #ffed74,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");

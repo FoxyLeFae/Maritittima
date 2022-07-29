@@ -5,7 +5,6 @@
 
 body {
 	margin: 0;
-	background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +34,7 @@ img {
 }
 
 
+
 #desktop {
 object-fit: cover;
 }
@@ -56,7 +56,7 @@ object-fit: cover;
 }
 
 .video {
-	max-width: 100%;
+	width: 100%;
 }
 
 .btn-text {
@@ -70,25 +70,28 @@ object-fit: cover;
 	background-color: #9af5d9;
 	border-color: #508071;
 	border-radius: 8px;
-	font-family: Broadway, serif;
+	font-family: "Agency FB", serif;
+	box-shadow: 0 10px 20px grey;
 }
 .btn-yellow {
 	background-color: #f5e99a;
 	border-color: #807950;
-	border-radius: 8px;
-	font-family: Broadway, serif;
+	font-family: "Agency FB", serif;
+	box-shadow: 0 10px 20px grey;
 }
 .btn-pink {
 	background-color: #fbbcf2;
 	border-color: #80607b;
 	border-radius: 8px;
-	font-family: Broadway, serif;
+	font-family: "Agency FB", serif;
+	box-shadow: 0 10px 20px grey;
 }
 .btn-purple {
 	background-color: #d79af5;
 	border-color: #705080;
 	border-radius: 8px;
-	font-family: Broadway, serif;
+	font-family: "Agency FB", serif;
+	box-shadow: 0 10px 20px grey;
 }
 
 .btn-blue:hover {background-color: #508071}
@@ -119,40 +122,109 @@ object-fit: cover;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
+
+.hover-blue:hover {
+	background-color: #9af5d9;
+	box-shadow: 0 0 10px 15px rgba(178, 250, 228, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+
+.hover-yellow:hover {
+	background-color: #F5E99A;
+	box-shadow: 0 0 10px 15px rgba(245, 237, 188, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+
+.hover-pink:hover {
+	background-color: #FBBCF2;
+	box-shadow: 0 0 10px 15px rgba(252, 207, 245, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+
+.hover-purple:hover {
+	background-color: #D79AF5;
+	text-decoration: none;
+	color: white;
+	box-shadow: 0 0 10px 15px rgba(234, 206, 250, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+
+.fam-shade {
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+
 .icon {
 	height: 20px;
 }
-.bg-pic {
+.header {
 	background-image: url("images/navbar-done2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.navbar-expand-md {
-	background-image: url("images/navbar-done2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.navbar-dark {
-	background-image: url("images/navbar-done2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 100%;
 }
 
 
 .navlogo {
-	 width: 25%;
-	margin: 0;
+width: 25%;
  }
+
+.navbar {
+	z-index: 2;
+	background-color: transparent;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+
+}
+
+.navp {
+	padding-top: 2rem;
+}
+
+.quote {
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+.qt {
+	font-size: 30px;
+}
+.card {
+	box-shadow: 10px 10px 20px grey;
+}
+.navbar-dark .navbar-toggler-icon {
+	color: #fbbcf2;
+}
+.videoframe {
+	border-style: groove;
+	border-color: #a3fce0;
+}
+
+
+
+
 
 
 
 
 @media screen and (min-width: 768px){
 
-	.logo {
-		width: 50%;
-		transform: translate(-50%, 15%);
+	.navlogo {
+		width: 20%;
 	}
 	.btn-area{
 	top: 75%;
@@ -171,9 +243,8 @@ object-fit: cover;
 
 @media screen and (min-width: 1020px){
 
-	.logo {
-		width: 25%;
-		transform: translate(-50%, -10%);
+	.navlogo {
+		width: 10%
 	}
 	.btn-area{
 		transform: translate(-50, 150%);
@@ -190,5 +261,9 @@ object-fit: cover;
 	.btn {
 		max-width: 25%;
 		margin: 5%;
+	}
+	.logo {
+		width: 30%;
+		transform: translate(-50%, -7%);
 	}
 }

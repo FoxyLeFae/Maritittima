@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Design</title>
 
     <!-- Metatags der fortÃ¦ller at sÃ¸gemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -27,7 +27,313 @@
 <!-- i <body> har man alt indhold pÃ¥ siden som brugeren kan se -->
 <body>
 
-<!-- Her skal sidens indhold ligge -->
+<!---baggrund--->
+<div class="bg-yellow ">
 
+    <!---navbar--->
+    <nav class="navbar pb-3 navp align-items-top text-pink navbar-expand-md navbar-dark position-fixed w-100">
+        <div class="container-fluid justify-content-between">
+            <img src="images/logo-done2.png" alt="Logo" class="navlogo mb-3">
+            <button class="navbar-toggler text-pink border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center d-flex">
+
+                    <li class="nav-item hover-blue px-4 py-1">
+                        <a class="nav-link nav-text text-blue" href="">About</a>
+                    </li>
+                    <li class="nav-item hover-yellow px-4 py-1">
+                        <a class="nav-link nav-text text-yellow" href="">Design</a>
+                    </li>
+                    <li class="nav-item hover-pink px-4 py-1">
+                        <a class="nav-link nav-text text-pink" href="">Music</a>
+                    </li>
+                    <li class="nav-item hover-purple px-4 py-1">
+                        <a class="nav-link nav-text text-purple" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---quote--->
+    <div class="container-fluid pt-5">
+      <div class="row pt-5">
+        <div class="col py-5 px-3 mt-md-5 text-purple quote">
+    <div class="qt">"Colour in a picture is like enthusiasm in life"</div>
+    <h2 class="p-3"> - Vincent Van Gogh</h2>
+         </div>
+     </div>
+    </div>
+
+    <!---cards--->
+    <div class=" container-fluid">
+        <h1 class="text-pink fam-shade">Webdesigns</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg-pink" >
+                        <img src="images/event.png" class="card-img-top pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Den Allersidste Dans</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/hopla.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zealand Håndboldklub</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/sygehus.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Patientvejledningen</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/urbangarden.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Urban Garden</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/Undercover.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Just In Case</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/marittima.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vinoteque Marittima</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink">
+                        <img src="images/musik.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Nedtur</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!---videos--->
+    <div class="container-fluid mt-5 mx-1 p-3 ">
+        <h1 class="text-blue fam-shade">Videos</h1>
+    <div id="carouselExampleControls" class="carousel slide p-3 videoframe" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/prostitution.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/indredaemoner.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+    <div class="container-fluid mt-5">
+        <h1>Other designs</h1>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 </body>
 </html>
