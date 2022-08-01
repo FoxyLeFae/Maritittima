@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 
 <!-- html starter og slutter hele dokumentet / lang=da: FortÃ¦ller siden er pÃ¥ dansk -->
+<!--suppress XmlDuplicatedId -->
 <html lang="da">
 
 <!-- I <head> har man opsÃ¦tning - det ser brugeren ikke, men det fortÃ¦ller noget om siden -->
@@ -27,50 +28,69 @@
 <!-- i <body> har man alt indhold pÃ¥ siden som brugeren kan se -->
 <body>
 
-<!---baggrund--->
-<div class="bg-yellow ">
 
-    <!---navbar--->
-    <nav class="navbar pb-3 navp align-items-top text-pink navbar-expand-md navbar-dark position-fixed w-100">
-        <div class="container-fluid justify-content-between">
-            <img src="images/logo-done2.png" alt="Logo" class="navlogo mb-3">
-            <button class="navbar-toggler text-pink border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center d-flex">
+<!---navbar--->
+<nav class=" navbar pb-3 align-items-top text-pink navbar-expand-md navbar-dark position-fixed">
+    <div class="container">
+        <img src="images/logo-guld.png" alt="Logo" class="navlogo mb-3">
+        <button class="navbar-toggler text-pink" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center d-flex">
 
-                    <li class="nav-item hover-blue px-4 py-1">
-                        <a class="nav-link nav-text text-blue" href="">About</a>
-                    </li>
-                    <li class="nav-item hover-yellow px-4 py-1">
-                        <a class="nav-link nav-text text-yellow" href="">Design</a>
-                    </li>
-                    <li class="nav-item hover-pink px-4 py-1">
-                        <a class="nav-link nav-text text-pink" href="">Music</a>
-                    </li>
-                    <li class="nav-item hover-purple px-4 py-1">
-                        <a class="nav-link nav-text text-purple" href="">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item hover-blue px-4 py-1">
+                    <a class="nav-link nav-text text-blue" href="">About</a>
+                </li>
+                <li class="nav-item hover-yellow px-4 py-1">
+                    <a class="nav-link nav-text text-yellow" href="">Design</a>
+                </li>
+                <li class="nav-item hover-pink px-4 py-1">
+                    <a class="nav-link nav-text text-pink" href="">Music</a>
+                </li>
+                <li class="nav-item hover-purple px-4 py-1">
+                    <a class="nav-link nav-text text-purple" href="">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!---quote--->
-    <div class="container-fluid pt-5">
-      <div class="row pt-5">
-        <div class="col py-5 px-3 mt-md-5 text-purple quote">
-    <div class="qt">"Colour in a picture is like enthusiasm in life"</div>
-    <h2 class="p-3"> - Vincent Van Gogh</h2>
-         </div>
-     </div>
+
+<!---header--->
+<header class="container-fluid  h-100 position-relative g-0" style="background-image: url(images/bgpink)">
+
+
+    <!--baggrund-->
+    <div class="row g-0 ">
     </div>
 
+    <!--quote-->
+    <div class="row">
+            <div class="row pt-5">
+                <div class="col py-5 px-3 mt-md-5 text-yellow quote">
+                    <h1 class="fam-shade">"Colour in a picture is like enthusiasm in life"</h1>
+                    <h2 class="p-3"> - Vincent Van Gogh</h2>
+                </div>
+            </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col py-5 px-3">
+            <img src="images/hero-about.png" alt="hero" class="d-block">
+        </div>
+    </div>
+
+</header>
+
+
+
+
+
     <!---cards--->
-    <div class=" container-fluid">
-        <h1 class="text-pink fam-shade">Webdesigns</h1>
+    <div class=" container-fluid card-container">
+        <img src="images/border3.png" alt="divider" class="divider p-3">
+        <h1 class="text-yellow fam-shade p-3">Webdesigns</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card bg-pink" >
@@ -282,11 +302,11 @@
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <h5 class="modal-title" id="">Modal title</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -308,15 +328,15 @@
         </div>
 
     <!---videos--->
-    <div class="container-fluid mt-5 mx-1 p-3 ">
-        <h1 class="text-blue fam-shade">Videos</h1>
+    <div class="container-fluid mt-5 mx-1 p-3 video-container">
+        <h1 class="text-blue fam-shade p-3">Videos</h1>
     <div id="carouselExampleControls" class="carousel slide p-3 videoframe" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/prostitution.png" class="d-block w-100" alt="...">
+                <img src="images/frame1.png" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/indredaemoner.png" class="d-block w-100" alt="...">
+                <img src="images/frame2.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -331,9 +351,9 @@
 </div>
 
     <div class="container-fluid mt-5">
-        <h1>Other designs</h1>
+        <h1 class="text-purple fam-shade p-3">Illustrations</h1>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</div>
+
 </body>
 </html>

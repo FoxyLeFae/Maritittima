@@ -65,81 +65,29 @@ object-fit: cover;
 
 
 }
-.btn-blue {
 
-	background-color: #9af5d9;
-	border-color: #508071;
-	border-radius: 8px;
-	font-family: "Agency FB", serif;
-	box-shadow: 0 10px 20px grey;
-}
 .btn-yellow {
-	background-color: #f5e99a;
+	background-color: #fdce1e;
 	border-color: #807950;
 	font-family: "Agency FB", serif;
 	box-shadow: 0 10px 20px grey;
 }
-.btn-pink {
-	background-color: #fbbcf2;
-	border-color: #80607b;
-	border-radius: 8px;
-	font-family: "Agency FB", serif;
-	box-shadow: 0 10px 20px grey;
-}
-.btn-purple {
-	background-color: #d79af5;
-	border-color: #705080;
-	border-radius: 8px;
-	font-family: "Agency FB", serif;
-	box-shadow: 0 10px 20px grey;
-}
-
-.btn-blue:hover {background-color: #508071}
-
-.btn-blue:active {
-	background-color: #508071;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-.btn-yellow:hover {background-color: #807950}
+.btn-yellow:hover {background-color: #d390bf}
 
 .btn-yellow:active {
-	background-color: #807950;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-.btn-pink:hover {background-color: #80607b}
-
-.btn-pink:active {
-	background-color: #80607b;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-.btn-purple:hover {background-color: #705080}
-
-.btn-purple:active {
-	background-color: #705080;
+	background-color: #d390bf;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
 
-.hover-blue:hover {
-	background-color: #9af5d9;
-	box-shadow: 0 0 10px 15px rgba(178, 250, 228, 0.75);
-	border-radius: 8px;
+.hover-pink {
+	color: #fbbcf2;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	font-family: "Agency FB", serif;
 	font-weight: bold;
 }
 
-.hover-yellow:hover {
-	background-color: #F5E99A;
-	box-shadow: 0 0 10px 15px rgba(245, 237, 188, 0.75);
-	border-radius: 8px;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-family: "Agency FB", serif;
-	font-weight: bold;
-}
+
 
 .hover-pink:hover {
 	background-color: #FBBCF2;
@@ -150,16 +98,6 @@ object-fit: cover;
 	font-weight: bold;
 }
 
-.hover-purple:hover {
-	background-color: #D79AF5;
-	text-decoration: none;
-	color: white;
-	box-shadow: 0 0 10px 15px rgba(234, 206, 250, 0.75);
-	border-radius: 8px;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-family: "Agency FB", serif;
-	font-weight: bold;
-}
 
 .fam-shade {
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -170,12 +108,6 @@ object-fit: cover;
 .icon {
 	height: 20px;
 }
-.header {
-	background-image: url("images/navbar-done2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-}
 
 
 .navlogo {
@@ -183,6 +115,7 @@ width: 25%;
  }
 
 .navbar {
+	width: auto;
 	z-index: 2;
 	background-color: transparent;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -191,9 +124,6 @@ width: 25%;
 
 }
 
-.navp {
-	padding-top: 2rem;
-}
 
 .quote {
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -206,6 +136,7 @@ width: 25%;
 .card {
 	box-shadow: 10px 10px 20px grey;
 }
+
 .navbar-dark .navbar-toggler-icon {
 	color: #fbbcf2;
 }
@@ -214,12 +145,31 @@ width: 25%;
 	border-color: #a3fce0;
 }
 
+.quote {
 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 5%);
+}
 
-
-
-
-
+.card-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 10%);
+}
+.video-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 850%);
+}
+.marble {
+	background-image: url("images/bgpink - mobil.jpg");
+	height: 400px;
+	width: 100%;
+}
 
 @media screen and (min-width: 768px){
 
