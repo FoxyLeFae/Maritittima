@@ -5,6 +5,7 @@
 
 body {
 	margin: 0;
+	font-family: "Agency FB", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,11 +34,6 @@ img {
 	height: auto;
 }
 
-
-
-#desktop {
-object-fit: cover;
-}
 .btn-area {
 	position: absolute;
 	top: 75%;
@@ -62,42 +58,21 @@ object-fit: cover;
 .btn-text {
 	font-weight: bold;
 	font-size: 120%;
-
-
 }
 
-.btn-yellow {
-	background-color: #fdce1e;
-	border-color: #807950;
-	font-family: "Agency FB", serif;
-	box-shadow: 0 10px 20px grey;
-}
-.btn-yellow:hover {background-color: #d390bf}
 
-.btn-yellow:active {
+.btn-pink:hover {
+	color: #F0DA74;
+	background-color: #FBBCF2;
+	box-shadow: 0 0 10px 15px rgba(252, 207, 245, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;}
+
+.btn-pink:active {
 	background-color: #d390bf;
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
-
-.hover-pink {
-	color: #fbbcf2;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-family: "Agency FB", serif;
-	font-weight: bold;
-}
-
-
-
-.hover-pink:hover {
-	background-color: #FBBCF2;
-	box-shadow: 0 0 10px 15px rgba(252, 207, 245, 0.75);
-	border-radius: 8px;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-family: "Agency FB", serif;
-	font-weight: bold;
-}
-
 
 .fam-shade {
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -111,9 +86,36 @@ object-fit: cover;
 
 
 .navlogo {
-width: 25%;
+	width: 50%;
  }
-
+.nav-link {
+	font-family: "Agency FB",sans-serif;
+	font-weight: bold;
+	font-size: large;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	color: white;
+}
+.bg-caption{
+	background-color: rgba(0, 0, 0, 0.37);
+}
+.nav-link:active {
+	color: #F0DA74;
+	background-color: #FBBCF2;
+	box-shadow: 0 0 10px 15px rgba(252, 207, 245, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
+.nav-link:hover {
+	color: #F0DA74;
+	background-color: #FBBCF2;
+	box-shadow: 0 0 10px 15px rgba(252, 207, 245, 0.75);
+	border-radius: 8px;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	font-family: "Agency FB", serif;
+	font-weight: bold;
+}
 .navbar {
 	width: auto;
 	z-index: 2;
@@ -121,55 +123,59 @@ width: 25%;
 	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	font-family: "Agency FB", serif;
 	font-weight: bold;
-
 }
 
-
-.quote {
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	font-family: "Agency FB", serif;
-	font-weight: bold;
-}
-.qt {
-	font-size: 30px;
-}
 .card {
-	box-shadow: 10px 10px 20px grey;
+
 }
 
 .navbar-dark .navbar-toggler-icon {
 	color: #fbbcf2;
 }
-.videoframe {
-	border-style: groove;
-	border-color: #a3fce0;
+.artframe {
+	border-style: solid;
+	border-width: thick;
+	border-color: #000000;
+}
+.top-text {
+	font-family: "Agency FB",sans-serif;
+	font-size: medium;
+}
+.subtext {
+	font-family: "Agency FB",sans-serif;
+	font-size: x-large;
 }
 
-.quote {
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 5%);
+.btn-headline {
+	font-family: "Agency FB",sans-serif;
+	font-weight: bold;
+	font-size: x-large;
 }
-
-.card-container {
+.title {
+	font-family: "Agency FB",sans-serif;
+	font-weight: bold;
+	font-size: xxx-large;
+}
+.modal-title {
+	font-family: "Agency FB",sans-serif;
+	font-weight: bold;
+	font-size: xx-large;
+}
+.pic-title {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, 10%);
+	font-family: "Agency FB",sans-serif;
+	font-weight: bold;
+	font-size: xxx-large;
+
 }
-.video-container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 850%);
-}
-.marble {
-	background-image: url("images/bgpink - mobil.jpg");
-	height: 400px;
-	width: 100%;
-}
+.gallery {
+	 background-image: url("/images/bg-pink-mobil.png");
+	 background-size: cover;
+	 background-repeat: no-repeat;
+ }
 
 @media screen and (min-width: 768px){
 
@@ -190,6 +196,7 @@ width: 25%;
 		padding-right: 20px;
 	}
 }
+
 
 @media screen and (min-width: 1020px){
 

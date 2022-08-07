@@ -1,0 +1,519 @@
+<!-- Instruktion til webbrowser om at vi kÃ¸rer HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: FortÃ¦ller siden er pÃ¥ dansk -->
+<!--suppress XmlDuplicatedId -->
+<html lang="da">
+
+<!-- I <head> har man opsÃ¦tning - det ser brugeren ikke, men det fortÃ¦ller noget om siden -->
+<head>
+    <!-- SÃ¦tter tegnsÃ¦tning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Portfolio</title>
+
+    <!-- Metatags der fortÃ¦ller at sÃ¸gemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Sikrer den vises korrekt pÃ¥ mobil, tablet mv. ved at tage ift. skÃ¦rmstÃ¸rrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold pÃ¥ siden som brugeren kan se -->
+<body style="background: black" data-bs-spy="scroll">
+
+
+    <!---navbar--->
+    <nav class=" navbar pb-3 align-items-top navbar-expand-md navbar-dark position-fixed">
+        <div class="container  g-0">
+            <div class="row g-0">
+                <div class="col flex-wrap d-flex justify-content-start">
+                     <a href="#top"> <img src="images/logo3.png" alt="Logo" class="navlogo mx-3 my-2" >
+                    </a>
+                </div>
+                <div class="col flex-wrap d-flex justify-content-end">
+                    <button class="navbar-toggler text-pink" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mx-3 my-2"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse bg-black  text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                    <li class="nav-item px-4 py-1">
+                        <a  class="nav-link text-pink nav-text" href="">Services</a>
+                    </li>
+                    <li class="nav-item px-4 py-1">
+                        <a class="nav-link nav-text text-pink" href="">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-4 py-1">
+                        <a class="nav-link nav-text text-pink" href="">Music</a>
+                    </li>
+                    <li class="nav-itemp x-4 py-1">
+                        <a class="nav-link nav-text text-pink " href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!---header--->
+    <header class="container-fluid  h-100 position-relative g-0 bg-black" id="top">
+
+
+        <!--hero-->
+        <div class="row g-0 justify-content-center pt-5">
+                    <div class="col d-flex flex-wrap flex-column d-flex mt-5 p-5 mt-md-5">
+                       <h6 class="top-text m-0 text-yellow">Hello, and welcome to</h6>
+                        <h1 class="title text-white pb-5 ">My portfolio</h1>
+                        <p class="subtext text-pink">Here you can see what previous projects i've
+                            been working on, my designs, illustrations and
+                            other artsy stuff i've made.</p>
+                    </div>
+                    <div class="col d-flex justify-content-center flex-wrap d-flex p-5 mt-md-5">
+                        <p class="btn-headline text-white">What would
+                            <span class="text-yellow">you</span>
+                            like to <span class="text-yellow">see? </span>
+                        </p>
+                        <div class="btn-group my-5" role="group" aria-label="Basic mixed styles example">
+                            <button type="button"  class="btn btn-pink"><a class="nav-link text-white" href="#art">Art</a></button>
+                            <button type="button" class="btn btn-pink"><a class="nav-link text-white" href="#webdesign">Webdesigns</a></button>
+                            <button type="button" class="btn btn-pink"><a class="nav-link text-white" href="#contact">Contact</a></button>
+                        </div>
+                    </div>
+        </div>
+
+        <!---image--->
+        <div class="row g-0 pt-5">
+            <div class="col pt-5">
+                <img class="h-100 w-auto" src="images/desktop-mobil.gif">
+            </div>
+        </div>
+
+    </header>
+
+
+    <!---webdesigns--->
+    <div class=" container-fluid bg-black g-0" id="webdesign">
+        <div class="row g-0 justify-content-center pt-5">
+            <div class="col d-flex flex-wrap flex-column d-flex mt-5 p-5 mt-md-5">
+                <h6 class="top-text m-0 text-yellow">Hello, and welcome to</h6>
+                <h1 class="title text-white pb-5 ">My portfolio</h1>
+                <p class="subtext text-pink">Here you can see what previous projects i've
+                    been working on, my designs, illustrations and
+                    other artsy stuff i've made.</p>
+            </div>
+    </div>
+    <!---cards--->
+            <div class="row row-cols-1 row-cols-md-3 g-0">
+                <div class="col">
+                    <div class="card bg-pink m-4" >
+                        <img src="images/event.png" class="card-img-top pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Den Allersidste Dans</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/hopla.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zealand Håndboldklub</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/sygehus.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Patientvejledningen</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/urbangarden.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Urban Garden</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/Undercover.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Just In Case</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/marittima.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vinoteque Marittima</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-pink m-4">
+                        <img src="images/socialnedtur.png" class="card-img-top cardpic pt-4 px-3" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Nedtur</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <button type="button" class="btn btn-yellow" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Read more...
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!---my art--->
+    <div class="container-fluid mt-5 p-5 gallery" id="art">
+        <h1 class="title text-white fam-shade pb-5 text-center ">My Art</h1>
+        <p class="subtext text-black">Here you can see what previous projects i've
+            been working on, my designs, illustrations and
+            other artsy stuff i've made.</p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+
+                <div class="carousel-item artframe active">
+                    <img src="/images/physical.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-transparent title text-black fam-shade pb-5 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                       Physical Art
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content bg-black">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <p class="subtext text-white">sjkldfhihghfifg</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item artframe">
+                    <img src="/images/digital.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-transparent title text-black fam-shade pb-5 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Digital Art
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content bg-black">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <p class="subtext text-white">sjkldfhihghfifg</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item artframe">
+                    <img src="/images/photography.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-transparent title text-black fam-shade pb-5 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Photography
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content bg-black">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <p class="subtext text-white">sjkldfhihghfifg</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item artframe">
+                    <img src="/images/3D.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn bg-transparent title text-black fam-shade pb-5 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            3D Art
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content bg-black">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title subtext text-pink" id="exampleModalLabel">Den Allersidste Dans</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <p class="subtext text-white">sjkldfhihghfifg</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-pink"><a class="text-white" href="http://highhobbit.dk/Event/">Visit site</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+</div>
+
+    <div class="container-fluid mt-5">
+        <h1 class="text-purple fam-shade p-3">Illustrations</h1>
+        <div class="progress">
+            <div class="progress-bar bg-pink progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example"  aria-valuemin="0" aria-valuemax="100" ></div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

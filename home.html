@@ -1,0 +1,72 @@
+<!-- Instruktion til webbrowser om at vi kÃ¸rer HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: FortÃ¦ller siden er pÃ¥ dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsÃ¦tning - det ser brugeren ikke, men det fortÃ¦ller noget om siden -->
+<head>
+    <!-- SÃ¦tter tegnsÃ¦tning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Home</title>
+
+    <!-- Metatags der fortÃ¦ller at sÃ¸gemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Sikrer den vises korrekt pÃ¥ mobil, tablet mv. ved at tage ift. skÃ¦rmstÃ¸rrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold pÃ¥ siden som brugeren kan se -->
+<body>
+
+
+<div class="bg-blue">
+    <nav class="navbar align-items-top text-pink navbar-expand-md navbar-dark position-fixed w-100">
+        <div class="container-fluid">
+            <img src="images/logo-done2.png" alt="Logo" class="navlogo m-0 ">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+                    <li class="nav-item hover-yw">
+                        <a class="nav-link " href="">About</a>
+                    </li>
+                    <li class="nav-item hover-yellow">
+                        <a class="nav-link" href="">Design</a>
+                    </li>
+                    <li class="nav-item hover-pink">
+                        <a class="nav-link" href="">Music</a>
+                    </li>
+                    <li class="nav-item hover-purple">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid pt-5">
+        <div class="row pt-5">
+            <div class="col py-5 px-3 text-pink quote">
+                <h1>"Imagination is more important than knowledge"</h1>
+                <h4 class="p-3"> - Albert Einstein</h4>
+            </div>
+        </div>
+    </div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+</body>
+</html>
