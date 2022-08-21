@@ -25,48 +25,138 @@
 </head>
 
 <!-- i <body> har man alt indhold pÃ¥ siden som brugeren kan se -->
-<body>
+
+<body style="background: black" data-bs-spy="scroll">
 
 
-<div class="bg-blue">
-    <nav class="navbar align-items-top text-pink navbar-expand-md navbar-dark position-fixed w-100">
-        <div class="container-fluid">
-            <img src="images/logo-done2.png" alt="Logo" class="navlogo m-0 ">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!---navbar--->
+<nav class=" navbar pb-3 align-items-top navbar-expand-md navbar-dark position-fixed">
+    <div class="container-fluid  g-0">
+        <div class="row g-0">
+            <div class="col flex-wrap d-flex justify-content-start">
+                <a href="#top"> <img src="images/logo3.png" alt="Logo" class="navlogo mx-3 my-2" >
+                </a>
+            </div>
+            <div class="col flex-wrap d-flex justify-content-end">
+                <button class="navbar-toggler text-pink" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mx-3 my-2"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse collapse-bg text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-                    <li class="nav-item hover-yw">
-                        <a class="nav-link " href="">About</a>
+                    <li class="nav-item px-4 py-1">
+                        <a  class="nav-link text-pink nav-text" href="">Services</a>
                     </li>
-                    <li class="nav-item hover-yellow">
-                        <a class="nav-link" href="">Design</a>
+                    <li class="nav-item px-4 py-1">
+                        <a class="nav-link nav-text text-pink" href="">Portfolio</a>
                     </li>
-                    <li class="nav-item hover-pink">
-                        <a class="nav-link" href="">Music</a>
-                    </li>
-                    <li class="nav-item hover-purple">
-                        <a class="nav-link" href="">Contact</a>
+                    <li class="nav-itemp x-4 py-1">
+                        <a class="nav-link nav-text text-pink " href="">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <div class="container-fluid pt-5">
-        <div class="row pt-5">
-            <div class="col py-5 px-3 text-pink quote">
-                <h1>"Imagination is more important than knowledge"</h1>
-                <h4 class="p-3"> - Albert Einstein</h4>
+<!---header--->
+<header class="container-fluid  h-100 position-relative g-0 bg-black" id="top">
+
+
+    <!--hero-->
+    <div class="row g-0 justify-content-center pt-5">
+        <div class="col d-flex flex-wrap flex-column d-flex mt-5 p-5 mt-md-5">
+            <h6 class="top-text m-0 text-yellow">Hello, my name is</h6>
+            <h1 class="title text-white pb-5 ">Freja Rose</h1>
+            <p class="subtext text-pink">I'm a multimedia student on
+                my 3. semester. Based in
+                Nykøbing Falster, Denmark.</p>
+        </div>
+        <div class="col d-flex justify-content-center flex-wrap d-flex p-5 mt-md-5">
+            <p class="btn-headline text-white">What would
+                <span class="text-yellow">you</span>
+                like to <span class="text-yellow">know? </span>
+            </p>
+            <div class="btn-group my-5" role="group" aria-label="Basic mixed styles example">
+                <button type="button"  class="btn btn-pink"><a class="nav-link text-white" href="#about">About</a></button>
+                <button type="button" class="btn btn-pink"><a class="nav-link text-white" href="#services">Services</a></button>
+                <button type="button" class="btn btn-pink"><a class="nav-link text-white" href="#contact">Contact</a></button>
             </div>
         </div>
     </div>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!---image--->
+    <div class="row g-0 pt-5 d-flex flex-column">
+        <div class="col pt-5">
+            <img class="h-100 w-auto" src="images/portfolio-mobil.png" alt="portrait">
+        </div>
+        <div class="col">
+            <img class="h-100 w-auto" src="images/desktop-mobil.gif" alt="GIF">
+        </div>
+    </div>
+
+</header>
+
+
+
+<!---footer--->
+<div class="container-fluid g-0" id="contact">
+    <div class="row flex-column g-0">
+        <div class="col flex-column text-center py-5 justify-content-center align-items-center d-flex">
+            <p class="top-text text-yellow pb-0 mb-0"> Since you made it this far, you might be interested.</p>
+            <p class="title text-white pt-0 mt-0">Wanna know <span class="text-pink">more?</span></p>
+            <p class="subtext text-pink">Get in touch with me!</p>
+            <p class="text-pink subtext"><span class="text-white">Click</span> on one of the
+                <span class="text-white">icons</span> below to <span>contact me!</span> <br> I hope to hear from you!</p>
+        </div>
+        <div class="col py-5 justify-content-evenly align-items-center d-flex bg-pink">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89.227" height="89.227" viewBox="0 0 89.227 89.227">
+                    <path id="Icon_awesome-linkedin" data-name="Icon awesome-linkedin" d="M82.853,2.25H6.353A6.4,6.4,0,0,0,0,8.683v76.36a6.4,6.4,0,0,0,6.353,6.433h76.5a6.418,6.418,0,0,0,6.373-6.433V8.683A6.418,6.418,0,0,0,82.853,2.25ZM26.967,78.73H13.742V36.148H26.987V78.73Zm-6.612-48.4a7.668,7.668,0,1,1,7.668-7.668A7.671,7.671,0,0,1,20.355,30.332ZM76.54,78.73H63.315V58.017c0-4.939-.1-11.293-6.871-11.293-6.891,0-7.947,5.377-7.947,10.934V78.73H35.272V36.148H47.959v5.816h.179c1.773-3.346,6.094-6.871,12.528-6.871,13.384,0,15.874,8.823,15.874,20.3Z" transform="translate(0 -2.25)"/>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="89.247" height="89.227" viewBox="0 0 89.247 89.227">
+                    <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M44.628,23.974A22.877,22.877,0,1,0,67.5,46.851,22.84,22.84,0,0,0,44.628,23.974Zm0,37.749A14.873,14.873,0,1,1,59.5,46.851,14.9,14.9,0,0,1,44.628,61.724ZM73.776,23.039A5.336,5.336,0,1,1,68.44,17.7,5.323,5.323,0,0,1,73.776,23.039Zm15.151,5.416c-.338-7.148-1.971-13.479-7.207-18.7C76.5,4.542,70.172,2.91,63.025,2.551c-7.367-.418-29.447-.418-36.814,0-7.128.338-13.459,1.971-18.7,7.187S.667,21.287.308,28.434C-.11,35.8-.11,57.881.308,65.248c.338,7.148,1.971,13.479,7.207,18.7s11.548,6.849,18.7,7.207c7.367.418,29.447.418,36.814,0,7.148-.338,13.479-1.971,18.7-7.207,5.216-5.216,6.849-11.548,7.207-18.7.418-7.367.418-29.427,0-36.794Zm-9.517,44.7a15.057,15.057,0,0,1-8.482,8.482c-5.873,2.329-19.81,1.792-26.3,1.792s-20.448.518-26.3-1.792a15.057,15.057,0,0,1-8.482-8.482c-2.329-5.873-1.792-19.81-1.792-26.3S7.536,26.4,9.845,20.55a15.057,15.057,0,0,1,8.482-8.482c5.873-2.329,19.81-1.792,26.3-1.792s20.448-.518,26.3,1.792a15.057,15.057,0,0,1,8.482,8.482c2.329,5.873,1.792,19.81,1.792,26.3S81.74,67.3,79.411,73.152Z" transform="translate(0.005 -2.238)"/>
+                </svg>
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#Modal12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="98.533" height="79.263" viewBox="0 0 98.533 79.263">
+                    <path id="Icon_awesome-envelope" data-name="Icon awesome-envelope" d="M96.666,30.673a1.154,1.154,0,0,1,1.867.97V73.855c0,5.47-4.138,9.908-9.237,9.908H9.237C4.138,83.763,0,79.325,0,73.855V31.664a1.147,1.147,0,0,1,1.867-.97c4.311,3.592,10.027,8.153,29.656,23.449,4.061,3.179,10.912,9.867,17.744,9.825,6.87.062,13.856-6.77,17.763-9.825C86.659,38.847,92.355,34.265,96.666,30.673Zm-47.4,26.669c4.465.083,10.893-6.027,14.126-8.546C88.93,28.919,90.874,27.185,96.763,22.231a5.077,5.077,0,0,0,1.77-3.9V14.408C98.533,8.938,94.4,4.5,89.3,4.5H9.237C4.138,4.5,0,8.938,0,14.408V18.33a5.109,5.109,0,0,0,1.771,3.9C7.659,27.164,9.6,28.919,35.141,48.8,38.374,51.315,44.8,57.425,49.267,57.342Z" transform="translate(0 -4.5)"/>
+                </svg>
+            </a>
+            <div class="modal fade" id="Modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                    <div class="modal-content bg-black">
+                        <div class="modal-header">
+                            <h5 class="modal-title subtext text-pink" id="exampleModalLabel">My Photographs</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <p class="subtext text-white">sjkldfhihghfifg</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-yellow" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
